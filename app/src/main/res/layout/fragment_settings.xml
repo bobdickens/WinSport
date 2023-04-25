@@ -1,11 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.SettingsFragment"
-    android:background="@drawable/crew">
+    android:background="@drawable/crew"
+    android:padding="16dp"
+    tools:context=".screens.SettingsFragment">
 
 
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="185dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/color_header"
+        android:text="CLEAR DATA"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textNotification"
+        app:layout_constraintStart_toStartOf="@+id/textNotification"
+        app:layout_constraintTop_toBottomOf="@+id/textNotification" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="NOTIFICATION"
+        android:textColor="@color/color_header"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="58dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="76dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:textColorHint="@color/color_header"
+        app:layout_constraintBottom_toBottomOf="@+id/textNotification"
+        app:layout_constraintStart_toEndOf="@+id/textNotification"
+        app:layout_constraintTop_toTopOf="@+id/textNotification"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

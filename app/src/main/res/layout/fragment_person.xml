@@ -83,7 +83,7 @@
      app:layout_constraintTop_toTopOf="parent" />
 
  <Button
-     android:id="@+id/btnGerman"
+     android:id="@+id/btnStart"
      android:layout_width="170dp"
      android:layout_height="66dp"
      android:layout_marginTop="32dp"

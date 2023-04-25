@@ -30,6 +30,13 @@ class MenuFragment : Fragment() {
         binding.btnTraining.setOnClickListener {
             APP.navController.navigate(R.id.action_menuFragment_to_trainingFragment)
         }
+
+        binding.btnAnalytics.setOnClickListener {
+            APP.navController.navigate(R.id.action_menuFragment_to_analiticsFragment)
+        }
+        binding.btnSettings.setOnClickListener {
+            APP.navController.navigate(R.id.action_menuFragment_to_settingsFragment)
+        }
     }
 
 }
