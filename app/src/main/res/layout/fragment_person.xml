@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.PersonFragment"
+    android:background="@drawable/crew"
+    android:padding="20dp">
+
+ <EditText
+     android:id="@+id/edMass"
+     android:layout_width="310dp"
+     android:layout_height="72dp"
+     android:layout_marginTop="32dp"
+     android:background="@drawable/edit_text_style"
+
+     android:padding="10dp"
+     app:layout_constraintEnd_toEndOf="@+id/edHeight"
+     app:layout_constraintStart_toStartOf="@+id/edHeight"
+     app:layout_constraintTop_toBottomOf="@+id/edHeight"
+
+     android:paddingStart="30dp"
+     android:hint="MASS"
+     android:textColor="@color/white"
+     android:textColorHint="@color/white"
+     android:textSize="30sp"/>
+
+ <EditText
+
+     android:id="@+id/edName"
+     android:layout_width="310dp"
+     android:layout_height="72dp"
+     android:layout_marginTop="36dp"
+     android:background="@drawable/edit_text_style"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.504"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textView"
+     android:paddingStart="30dp"
+     android:hint="@string/name"
+     android:textColor="@color/white"
+     android:textColorHint="@color/white"
+     android:textSize="30sp"
+     />
+
+ <TextView
+     android:id="@+id/textView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="70dp"
+     android:text="@string/start_of_training"
+     android:textColor="@color/white"
+     android:textSize="30sp"
+     android:textStyle="bold|italic"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <EditText
+     android:id="@+id/edHeight"
+     android:layout_width="310dp"
+     android:layout_height="72dp"
+     android:layout_marginTop="32dp"
+     android:background="@drawable/edit_text_style"
+     android:padding="10dp"
+     app:layout_constraintEnd_toEndOf="@+id/edName"
+     app:layout_constraintStart_toStartOf="@+id/edName"
+     app:layout_constraintTop_toBottomOf="@+id/edName"
+     android:paddingStart="30dp"
+     android:hint="@string/height"
+     android:textColor="@color/white"
+     android:textColorHint="@color/white"
+     android:textSize="30sp"/>
+
+
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/logo2"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <Button
+     android:id="@+id/btnGerman"
+     android:layout_width="170dp"
+     android:layout_height="66dp"
+     android:layout_marginTop="32dp"
+     android:backgroundTint="@color/start_color"
+     android:text="@string/start"
+     android:textSize="25sp"
+     android:textStyle="bold|italic"
+     app:cornerRadius="20dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="@+id/edMass"
+     app:layout_constraintStart_toStartOf="@+id/edMass"
+     app:layout_constraintTop_toBottomOf="@+id/edMass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

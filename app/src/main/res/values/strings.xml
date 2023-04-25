@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Win Sport</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_of_training">START OF TRAINING</string>
+    <string name="name">NAME</string>
+    <string name="height">HEIGHT</string>
+    <string name="weight">WEIGHT</string>
+    <string name="start">START</string>
+    <string name="training">TRAINING</string>
+    <string name="analytics">ANALYTICS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="goal_for_the_day">THE GOAL FOR THE DAY</string>
+    <string name="points">POINTS</string>
+    <string name="progress">PROGRESS</string>
+    <string name="Monday">MONDAY</string>
+    <string name="Tuesday">TUESDAY</string>
+    <string name="Wednesday">WEDNESDAY</string>
+    <string name="Thursday">THURSDAY</string>
+    <string name="Friday">FRIDAY</string>
+    <string name="Saturday">SATURDAY</string>
+    <string name="Sunday">SUNDAY</string>
+
+
+
+    <string name="text_wednesday">Exercises with chips for football players
+With the help of chips, you can perform many exercises on the technique of dribbling. Not everyone has chips, but they can be replaced with other items: stones, sneakers, etc.
+
+I suggest watching the video below. The author gives 7 dribbling exercises using chips.
+The above exercises with the ball allow football players to improve team interactions. Limited space and high density forces players to make quick decisions.
+Strength training for football players in the gym
+A football player must be strong enough to confidently fight with an opponent, make quick dashes and deliver strong shots on goal. To do this, you need to conduct strength training in the gym.
+
+Here are some exercises for football players in the gym:
+Bench press
+Elbow leg raises
+Twisting on fitball
+neck exercises
+Performed independently. Hands behind your head. Head tilts back. Resist with your hands.
+Find yourself a mate. The first number takes the second by the head and tries to tilt towards him. The first resists.
+</string>
+
+
+</resources>
