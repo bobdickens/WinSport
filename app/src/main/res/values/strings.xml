@@ -22,6 +22,18 @@
     <string name="Sunday">SUNDAY</string>
 
 
+    <string name="text_monday">In Barcelona and PSG, training takes place according to the following scheme:
+Field run
+Running exercises (running with a high raise of the hips, overlapping of the lower leg, side steps, etc.)
+Stretching
+The whole process takes about 15-20 minutes. After warming up, you can start exercises with the ball.
+Football is a team game, so it is important to pay great attention to team interactions.
+Here are some exercises with the ball in groups:
+Square
+Playing the square is one of the favorite exercises of football players.
+Several players stand around the perimeter of the restricted area and play a pass between themselves. Inside the zone there is one or more drivers. Their task is to take the ball away or intercept the pass. After the selection, the driver takes the place of the player who lost the ball.
+To increase the interest and speed of the ball, the coach comes up with tasks. For example, if there are 10 passes inside the square, then the drivers do 15 push-ups. It all depends on the imagination of the coach. The number of players in the square can be different: 3+1 driver, 4+1, 4+2, 5+2, 6+2 and so on.
+</string>
 
     <string name="text_wednesday">Exercises with chips for football players
 With the help of chips, you can perform many exercises on the technique of dribbling. Not everyone has chips, but they can be replaced with other items: stones, sneakers, etc.
@@ -39,6 +51,47 @@ neck exercises
 Performed independently. Hands behind your head. Head tilts back. Resist with your hands.
 Find yourself a mate. The first number takes the second by the head and tries to tilt towards him. The first resists.
 </string>
+
+    <string name="text_thursday">Exercises for the arms and shoulder girdle
+There are many exercises to develop the strength of the arms and shoulder girdle. Here are some of them:
+
+Pushups
+Pull-ups on the bar
+Done in pairs. Passing medicine ball from hand to hand.
+Press exercises
+Scissors
+Lifting the torso, while the partner holds the legs
+Lying on your back, straight legs, take them behind your head, then slowly return to their original position.
+Performed in pairs. The first number lies on the back. The second is in the presence of the first head. The first number holds on to the heels of partners and is the highest official. The second - pushes the legs back. The first one resists.</string>
+
+    <string name="text_friday">Core Strengthening Exercises
+Legs wider than shoulders. Tilts of the body to the left, right leg and to the middle.
+Legs shoulder width apart. Turns of the body to the side.
+Performed in pairs. Partners hold hands with their backs to each other and tilt to the sides.
+Strength training for football players
+Legs are one of the main tools of a football player (the most important is the head). The legs of a football player must be strong in order to withstand serious loads.
+Speed drills are best done immediately after the warm-up, when the players are not yet tired.
+Here are some exercises:
+Shuttle run (2x10 m, 4x5 m, 4x10 m, 2x15 m)
+Fast dribbling, abrupt stop on signal and forward acceleration without the ball
+Leg Frequency Exercises Using Chips
+In the following video, the author shows useful exercises for leg speed. I advise you to look
+</string>
+
+<string name="text_tuesday">Liverpool and Manchester City prefer this training scheme:
+Ball retention game
+Players are divided into two teams, the area is limited to chips. When one team has the ball, the other team tries to take it away. If the ball is taken, the teams change roles.
+The trainer can also come up with tasks. For example, allow players to play only 2 touches.
+Football game with various tasks
+Such exercises, as a rule, are carried out in truncated compositions (6 by 6, 7 by 7, etc.). Several small gates can be installed. The task is to score a goal in one of the opponents gates.
+This exercise develops the speed of thinking. When a large number of players have accumulated at one gate, the players must turn the game around and attack the other gate.
+Football in pairs
+Football players are also divided into two teams, find a mate and join hands. All movements are performed together. A very useful and fun exercise.
+</string>
+
+
+
+
 
 
 </resources>

@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnStatistic3"
+        android:id="@+id/btnSettings"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="32dp"
@@ -28,12 +28,12 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/btnStatistic2"
-        app:layout_constraintStart_toStartOf="@+id/btnStatistic2"
-        app:layout_constraintTop_toBottomOf="@+id/btnStatistic2" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAnalytics"
+        app:layout_constraintStart_toStartOf="@+id/btnAnalytics"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnalytics" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnStatistic2"
+        android:id="@+id/btnAnalytics"
         android:layout_width="350dp"
         android:layout_height="87dp"
         android:layout_marginTop="32dp"
@@ -42,12 +42,12 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/btnStatistic"
-        app:layout_constraintStart_toStartOf="@+id/btnStatistic"
-        app:layout_constraintTop_toBottomOf="@+id/btnStatistic" />
+        app:layout_constraintEnd_toEndOf="@+id/btnTraining"
+        app:layout_constraintStart_toStartOf="@+id/btnTraining"
+        app:layout_constraintTop_toBottomOf="@+id/btnTraining" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnStatistic"
+        android:id="@+id/btnTraining"
         android:layout_width="356dp"
         android:layout_height="81dp"
         android:layout_marginTop="60dp"
@@ -70,16 +70,15 @@
         android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="@+id/btnStatistic3"
-        app:layout_constraintStart_toStartOf="@+id/btnStatistic3"
-        app:layout_constraintTop_toBottomOf="@+id/btnStatistic3" />
+        app:layout_constraintEnd_toEndOf="@+id/btnSettings"
+        app:layout_constraintStart_toStartOf="@+id/btnSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="70dp"
         android:gravity="center"
         android:text="25000"
         android:textColor="@color/color_header"
@@ -119,7 +118,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="64dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/progress"
