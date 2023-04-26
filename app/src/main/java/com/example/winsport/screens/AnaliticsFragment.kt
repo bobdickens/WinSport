@@ -1,5 +1,6 @@
 package com.example.winsport.screens
 
+import android.animation.ObjectAnimator
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,8 +26,14 @@ lateinit var binding: FragmentAnaliticsBinding
         init()
     }
     private fun init() {
+        binding.progress.max = 25000
+        val progress = binding.progress
+
         val checkPoints = APP.app_points.getString(APP_POINTS_SET, "1")
+
         if (checkPoints == "") {APP.app_points.edit().putString(APP_POINTS_SET, "0").apply()}
+        val checkPoints2 = APP.app_points.getString(APP_POINTS_SET, "1")
+        ObjectAnimator.ofInt(progress, "progress", checkPoints2!!.toInt() ).setDuration(1000).start()
         binding.btnBack.setOnClickListener {
             APP.navController.navigate(R.id.action_analiticsFragment_to_menuFragment)
         }
@@ -58,6 +65,9 @@ lateinit var binding: FragmentAnaliticsBinding
 
 
                 binding.textProgressPoints.text = APP.app_points.getString(APP_POINTS_SET, "1")
+
+
+                ObjectAnimator.ofInt(progress, "progress", current_points2.toInt() ).setDuration(1000).start()
 
             }
 
