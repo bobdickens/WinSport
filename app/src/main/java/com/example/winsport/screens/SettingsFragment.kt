@@ -29,14 +29,12 @@ lateinit var binding: FragmentSettingsBinding
         binding.btnClear.setOnClickListener {
             val value = ""
             APP.app_name.edit().putString(APP_NAME_SET, value).apply()
-
-            val value_height = ""
-            APP.app_height.edit().putString(APP_HEIGHT_SET, value_height).apply()
-
-            val value_mass = ""
-            APP.app_mass.edit().putString(APP_MASS_SET, value_mass).apply()
-
+            APP.app_height.edit().putString(APP_HEIGHT_SET, value).apply()
+            APP.app_mass.edit().putString(APP_MASS_SET, value).apply()
+            APP.app_distance.edit().putString(APP_DISTANCE_SET, value).apply()
+            APP.app_squats.edit().putString(APP_SQUATS_SET, value).apply()
             APP.navController.navigate(R.id.action_settingsFragment_to_personFragment)
+            APP.app_points.edit().putString(APP_POINTS_SET, value).apply()
         }
     }
 

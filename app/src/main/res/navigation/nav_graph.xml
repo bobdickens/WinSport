@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_analiticsFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <argument
+            android:name="points"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
@@ -49,6 +52,9 @@
         <action
             android:id="@+id/action_menuFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <argument
+            android:name="pointsMenu"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/personFragment"

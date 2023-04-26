@@ -1,6 +1,7 @@
 package com.example.winsport.screens
 
 
+import android.icu.number.IntegerWidth
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -23,9 +24,9 @@ class PersonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.edName.setText(APP.app_name.getString(APP_NAME_SET, ""))
-        binding.edHeight.setText(APP.app_height.getString(APP_HEIGHT_SET, ""))
-        binding.edMass.setText(APP.app_mass.getString(APP_MASS_SET, ""))
+        binding.edName.setText(APP.app_name.getString(APP_NAME_SET, "0"))
+        binding.edHeight.setText(APP.app_height.getString(APP_HEIGHT_SET, "0"))
+        binding.edMass.setText(APP.app_mass.getString(APP_MASS_SET, "0"))
 
         binding.btnStart.setOnClickListener {
             val value = binding.edName.text.toString()
@@ -39,6 +40,7 @@ class PersonFragment : Fragment() {
 
             APP.navController.navigate(R.id.menuFragment)
 
+
         }
     }
 
@@ -46,4 +48,6 @@ class PersonFragment : Fragment() {
         @JvmStatic
         fun newInstance() = PersonFragment()
     }
+
+
 }
