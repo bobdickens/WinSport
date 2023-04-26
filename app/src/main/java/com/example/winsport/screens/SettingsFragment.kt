@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.winsport.*
 import com.example.winsport.databinding.FragmentSettingsBinding
 
-class SettingsFragment : Fragment() {
+ class SettingsFragment : Fragment() {
 
 lateinit var binding: FragmentSettingsBinding
 
@@ -22,10 +22,10 @@ lateinit var binding: FragmentSettingsBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        init()
+        clear()
     }
 
-    private fun init() {
+    private fun clear() {
         binding.btnClear.setOnClickListener {
             val value = ""
             APP.app_name.edit().putString(APP_NAME_SET, value).apply()

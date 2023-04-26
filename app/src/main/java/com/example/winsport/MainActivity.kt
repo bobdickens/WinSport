@@ -48,9 +48,7 @@ class MainActivity : AppCompatActivity() {
         APP = this
         navController = Navigation.findNavController(this, R.id.nav_fragment)
 
-        val calendar: Calendar = Calendar.getInstance()
-        val day: Int = calendar.get(Calendar.DAY_OF_WEEK)
-        Log.d("calendarMain", "$day")
+
 
 
 
@@ -63,8 +61,7 @@ class MainActivity : AppCompatActivity() {
         app_points = getSharedPreferences(APP_POINTS, Context.MODE_PRIVATE)
         app_day = getSharedPreferences(APP_DAY, Context.MODE_PRIVATE)
 
-        val test = app_day.edit().putString(APP_DAY_SET, day.toString()).apply()
-        Log.d("calendarConst", test.toString())
+
 
 
 
