@@ -26,6 +26,9 @@ lateinit var binding: FragmentSettingsBinding
     }
 
     private fun clear() {
+        binding.btnBack.setOnClickListener {
+            APP.navController.navigate(R.id.action_settingsFragment_to_menuFragment)
+        }
         binding.btnClear.setOnClickListener {
             val value = ""
             APP.app_name.edit().putString(APP_NAME_SET, value).apply()

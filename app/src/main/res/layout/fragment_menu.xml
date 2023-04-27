@@ -9,6 +9,8 @@
 
     tools:context=".screens.MenuFragment">
 
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"

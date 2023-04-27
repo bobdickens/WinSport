@@ -32,6 +32,7 @@ class MenuFragment : Fragment() {
     private fun init() {
 
 
+
         binding.btnTraining.setOnClickListener {
             APP.navController.navigate(R.id.action_menuFragment_to_trainingFragment)
         }
@@ -41,8 +42,19 @@ class MenuFragment : Fragment() {
             val day: Int = calendar.get(Calendar.DAY_OF_WEEK)
             APP.app_day.edit().putString(APP_DAY_SET, day.toString()).apply()
 
-            val test3 = APP.app_day.getString(APP_DAY_SET, "")
-            Log.d("calendarFinal", test3.toString())
+            val check = APP.app_day.getString(APP_DAY_SET, "")
+            Log.d("calendarFinal", check.toString())
+
+            val checkDay = APP.app_day_check.getString(APP_DAY_CHECK_SET, "")
+
+            if(check != checkDay){
+                val value = ""
+                APP.app_distance.edit().putString(APP_DISTANCE_SET, value).apply()
+                APP.app_squats.edit().putString(APP_SQUATS_SET, value).apply()
+                APP.app_points.edit().putString(APP_POINTS_SET, value).apply()
+
+                APP.app_day_check.edit().putString(APP_DAY_CHECK_SET, check).apply()
+            }
 
             APP.navController.navigate(R.id.action_menuFragment_to_analiticsFragment)
         }

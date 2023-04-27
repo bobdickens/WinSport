@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.winsport.APP
 import com.example.winsport.R
 import com.example.winsport.databinding.FragmentTrainingBinding
 import java.util.*
@@ -24,6 +25,10 @@ class TrainingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnBack.setOnClickListener {
+            APP.navController.navigate(R.id.action_trainingFragment_to_menuFragment)
+        }
 
 
         val calendar: Calendar = Calendar.getInstance()

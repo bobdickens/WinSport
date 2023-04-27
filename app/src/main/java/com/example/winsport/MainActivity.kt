@@ -27,6 +27,8 @@ const val APP_POINTS = "APP_POINTS"
 const val APP_POINTS_SET = "APP_POINTS_SET"
 const val APP_DAY = "APP_DAY"
 const val APP_DAY_SET = "APP_DAY_SET"
+const val APP_DAY_CHECK = "APP_DAY_CHECK"
+const val APP_DAY_CHECK_SET = "APP_DAY_CHECK_SET"
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -39,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var app_points: SharedPreferences
     lateinit var app_day: SharedPreferences
+    lateinit var app_day_check: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +63,9 @@ class MainActivity : AppCompatActivity() {
         app_squats = getSharedPreferences(APP_SQUATS, Context.MODE_PRIVATE)
         app_points = getSharedPreferences(APP_POINTS, Context.MODE_PRIVATE)
         app_day = getSharedPreferences(APP_DAY, Context.MODE_PRIVATE)
+        app_day_check = getSharedPreferences(APP_DAY_CHECK, Context.MODE_PRIVATE)
+
+
 
 
 

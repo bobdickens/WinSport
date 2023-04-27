@@ -24,6 +24,10 @@ class PersonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnBack.setOnClickListener {
+            APP.navController.navigate(R.id.action_analiticsFragment_to_menuFragment)
+        }
+
         binding.edName.setText(APP.app_name.getString(APP_NAME_SET, "0"))
         binding.edHeight.setText(APP.app_height.getString(APP_HEIGHT_SET, "0"))
         binding.edMass.setText(APP.app_mass.getString(APP_MASS_SET, "0"))
